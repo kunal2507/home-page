@@ -1,0 +1,264 @@
+<style>
+      :root {
+        --dark-blue: #032368;
+        --light-blue: #09aeff;
+        --light-green: #bfff5a;
+        --white: #fff;
+        --gray: #a8a7a7;
+      }
+
+      body {
+        background-color: #032368;
+        overflow-x: hidden !important;
+        
+      }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+      background: linear-gradient(135deg, #032368 0%, #032368 30%, #0097df 65%, #9edf3a 140%);
+  }
+
+      .web123-container {
+        font-family: 'Poppins', sans-serif;
+        color: var(--white);
+        padding: 4rem 1.5rem;
+        overflow: hidden;
+        margin-top: 45px;
+        margin-bottom: -190px;
+        overflow-x: hidden !important;
+      }
+
+      .web123-main {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .web123-hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 2rem;
+       
+      }
+
+      .web123-hero-content {
+        max-width: 600px;
+        z-index: 3;
+        margin-left: 90px;
+        margin-top: -150px;
+        text-align: center;
+        position: relative;
+      }
+
+      .web123-hero-content h1 {
+        font-size: clamp(2rem, 5vw, 4rem);
+        margin-bottom: 1rem;
+        color: var(--light-green);
+      }
+
+      .web123-hero-content p {
+        color: white;
+        font-size: clamp(1rem, 2vw, 1.1rem);
+        margin-bottom: 2rem;
+      }
+
+      .web123-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+      }
+
+      .web123-btn {
+        padding: 0.4rem 1.5rem;
+        border-radius: 0.5rem;
+        
+        text-decoration: none;
+        transition: all 0.3s;
+        margin: 0 auto;
+      }
+
+      .web123-btn-primary {
+         font-size: 15px;
+            line-height: 28px;
+            color: #bfff5a;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+            border: 2px solid #bfff5a;
+            border-radius: 10px;
+            padding: 9px 20px;
+            transition: all 0.3s ease;
+      }
+
+      .web123-btn-primary:hover {
+         background-color: #bfff5a;
+            color: black;
+            border: 2px solid #bfff5a;
+            transform: translateY(-4px);
+      }
+
+      .web123-rocket-container {
+        width: min(300px, 40vw);
+        animation: web123-float 6s ease-in-out infinite;
+        filter: drop-shadow(0 0 40px rgba(9, 174, 255, 0.3));
+      }
+
+      .web123-rocket img {
+        width: 100%;
+        margin-left: -110px;
+        translate: 0 -50px;
+        scale: 1.2;
+        height: auto;
+        transform: rotate(-39deg);
+      }
+
+      .web123-target-container {
+        width: min(200px, 30vw);
+        animation: web123-float-reverse 6s ease-in-out infinite;
+        filter: drop-shadow(0 0 40px rgba(9, 174, 255, 0.3));
+      }
+
+      .web123-target {
+        position: relative;
+        z-index: -1;
+        left: 0px;
+      }
+
+      .web123-target img {
+        position: absolute;
+        top: -230px;
+        margin-left: 70px;
+        width: 100%;
+        height: auto;
+      }
+
+      @keyframes web123-float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes web123-float-reverse {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(20px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* ✅ MOBILE ONLY STYLES */
+      @media (max-width: 768px) {
+        .web123-main {
+          margin-bottom: 100px;
+        }
+
+        .web123-container {
+          font-family: 'Poppins', sans-serif;
+          color: var(--white);
+          overflow: hidden;
+          margin-bottom: -220px;
+          margin-top: -5px;
+          overflow-x: hidden;
+        }
+
+        .web123-hero {
+          flex-direction: column;
+          position: relative;
+        }
+
+        .web123-hero-content {
+          text-align: left;
+          margin-top: 0 !important;
+          margin-left: 5%;
+          font-size: larger;
+          padding-bottom: 120px;
+          z-index: 3;
+          position: relative;
+        }
+
+        .herosection {
+          margin-top: -35%;
+        }
+
+        .web123-hero-content h1 {
+          display: block;
+          font-size: 2.1rem;
+          line-height: 1.3;
+          color: transparent;
+          position: relative;
+        }
+
+        .web123-hero-content h1::after {
+          content: 'Elevate\AYour\A Digital\APresence';
+          text-align: left;
+          white-space: pre;
+          display: block;
+          color: var(--light-green);
+        }
+
+        .web123-rocket-container {
+          position: absolute;
+          top: 41%;
+          right: 10px;
+          width: 136px;
+          transform: rotate(-40deg);
+          animation: none;
+        }
+
+        .web123-rocket img {
+          width: 105%;
+          height: auto;
+          margin-left: 20%;
+          scale: 1;
+          transform: none;
+        }
+
+        .web123-target-container {
+          position: absolute;
+          bottom: -10px;
+          left: 2px;
+          width: 100px;
+          animation: none;
+        }
+
+        .web123-target img {
+          position: static;
+          width: 119%;
+          margin: 0;
+        }
+
+        .web123-buttons {
+          justify-content: center;
+          margin-bottom: 0;
+          position: absolute;
+          bottom: 70px;
+          left: 0;
+          right: 0;
+          z-index: 5;
+        }
+
+        .web123-btn {
+          padding: 0.7rem 1.2rem;
+          font-size: 1rem;
+        }
+      }
+    </style>
